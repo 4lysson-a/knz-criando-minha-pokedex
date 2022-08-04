@@ -8,13 +8,14 @@ Links úteis
 
 ## Sobre a atividade: 
 
-Nessa atividade você irá usar a context api do React, que aprendeu nas atividades anteriores para criar a sua própria pokédex ! 
-Podendo criar seus próprios pokémons, pegar os pokémons já existentes da api e deletar qualquer pokémon da lista !
+Nessa atividade você irá usar a context api do React, que aprendeu nas atividades anteriores, para criar a sua própria pokédex ! 
+Sendo possível listar os pokemons vindos da api e adicionar os pokemons selecionados a sua pokedex, excluir da pokedex e fazer uma busca por todos os pokemons 
 
 ## Resultado 
 
 ![Group 1](https://user-images.githubusercontent.com/26152669/182900699-d70c37a9-42a6-438e-8a66-cbdcb24b3150.png)
 
+**OBS: A estilização é livre, o resultado apresentado acima é apenas um modelo de estilização**
 ## Mão na massa !
 
   - Para começar, faça o clone do repositório …
