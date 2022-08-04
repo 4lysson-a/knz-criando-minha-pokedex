@@ -2,21 +2,22 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   padding: 20px 15px;
-  
+
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  
+
   background: var(--red);
 
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 
-  h1,h2 {
+  h1,
+  h2 {
     color: var(--white);
   }
 
-  h2{
+  h2 {
     opacity: 0.7;
   }
 `;
@@ -59,7 +60,7 @@ export const Item = styled.div`
 
   ul {
     color: var(--white);
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 1.2rem;
   }
 `;
@@ -82,6 +83,7 @@ export const AddButton = styled.button`
     cursor: pointer;
     svg {
       path {
+        fill: var(--black);
         stroke: var(--black);
       }
     }

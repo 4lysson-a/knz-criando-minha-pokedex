@@ -1,13 +1,13 @@
-import React, { createContext } from "react";
+import React, { createContext, useEffect, useState } from "react";
 
 import { getPokemonsFirstGeneration } from "../services/request";
 
 export const PokemonContext = createContext({});
 
 export const PokemonProvider = ({ children }) => {
-  const [pokedex, setPokedex] = React.useState([]);
-  const [pokemons, setPokemons] = React.useState([]);
-  const [filteredPokemons, setFilteredPokemons] = React.useState(pokemons);
+  const [pokedex, setPokedex] = useState([]);
+  const [pokemons, setPokemons] = useState([]);
+  const [filteredPokemons, setFilteredPokemons] = useState(pokemons);
 
   const searchPokemons = (name) => {
     setFilteredPokemons(
@@ -29,7 +29,7 @@ export const PokemonProvider = ({ children }) => {
     setPokedex(pokedex.filter((pokemon) => pokemon.name !== name));
   };
 
-  React.useEffect(() => {
+  useEffect(() => {
     let mounted = true;
 
     getPokemonsFirstGeneration().then((response) => {
