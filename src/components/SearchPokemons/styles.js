@@ -17,6 +17,11 @@ export const Container = styled.div`
     color: #413f3f;
     font-weight: bold;
   }
+
+  @media screen and (max-width: 1200px) {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
 `;
 
 export const Form = styled.form`
@@ -37,7 +42,7 @@ export const Input = styled.input`
 
   font-weight: bolder;
   font-size: 1.1rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: rgba(0, 0, 0, 0.6);
 `;
 
@@ -48,7 +53,7 @@ export const InputContainer = styled.div`
 
   label {
     font-size: 0.8rem;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     color: rgba(0, 0, 0, 0.5);
     font-weight: bold;
   }

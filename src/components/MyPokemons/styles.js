@@ -1,19 +1,24 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.div`
   background: var(--black);
   padding: 20px 30px;
   border-radius: 10px;
+  height: fit-content;
 
-  h1, p{
+  h1,
+  p {
     color: var(--white);
   }
 
-  p{
+  p {
     opacity: 0.6;
   }
 
-  height: fit-content;
+  @media screen and (max-width: 1200px) {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
 `;
 
 export const Item = styled.div`
@@ -24,11 +29,10 @@ export const Item = styled.div`
 
   ul {
     color: var(--white);
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 1.2rem;
   }
 `;
-
 
 export const DeleteButton = styled.button`
   border: none;
@@ -53,4 +57,3 @@ export const DeleteButton = styled.button`
     }
   }
 `;
-
