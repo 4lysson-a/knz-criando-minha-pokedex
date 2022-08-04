@@ -22,7 +22,7 @@ Sendo possível listar os pokemons vindos da api e adicionar os pokemons selecio
   - Crie o projeto React usando o comando: `yarn create react-app <nome do projeto ou . >`
   - Após isso, entre na pasta criada e abra seu projeto no seu editor. Rode o comando `yarn start` para iniciar o servidor com seu app.
   - Crie um contexto chamado `PokemonContext`, nele você ira colocar os principais estados da aplicação
-  - Dentro do contexto vamos criar um estado para armazenar os pokemons vindos da api, `pokemonsLit` e outro estado para armazenar os pokemons adicionados à nossa própria `pokedex`
+  - Dentro do contexto vamos criar um estado para armazenar os pokemons vindos da api, `pokemon` e outro estado para armazenar os pokemons adicionados à nossa própria `pokedex`
   - Agora dentro do `index.js` importamos o provider do nosso contexto `PokemonContext`
   - Agora faremos uma requisição na api de pokemons com o seguinte endpoint
     ```
