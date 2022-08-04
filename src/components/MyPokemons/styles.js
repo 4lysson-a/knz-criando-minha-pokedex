@@ -16,7 +16,9 @@ export const Container = styled.div`
   }
 
   @media screen and (max-width: 1200px) {
+    border-radius: 0;
     border-top-left-radius: 10px;
+    margin-top: -10px;
     border-top-right-radius: 10px;
   }
 `;

@@ -20,6 +20,10 @@ export const Container = styled.div`
   h2 {
     opacity: 0.7;
   }
+
+  @media screen and (max-width: 1200px) {
+    margin-top: -20px;
+  }
 `;
 
 export const Content = styled.div`
