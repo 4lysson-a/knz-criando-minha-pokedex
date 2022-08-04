@@ -27,3 +27,20 @@ Podendo criar seus próprios pokémons, pegar os pokémons já existentes da api
       https://pokeapi.co/api/v2/pokemon/?limit=151
     ```
   - Feito isso use os dados gerados pela requisição para popular o seu estado de pokemons dentro do contexto
+  - Agora criaremos um outro componente chamado `ListPokemons` para exibir na tela os pokemons que foram puxados da api
+    - Esse componente deve exibir os pokemons a partir do estado dentro do contexto
+    - Lembre-se de adicionar também a opção de remover um pokemon da lista
+  - Feito a exibição, criaremos agora um novo componente na aplicação, chamado de `CreatePokemons`, onde criaremos um novo pokemon a partir de um formulário
+    - Assim como o anterior ele também deve manipular o estado do contexto, adicionando o novo pokemon no nosso estado de `pokemons`
+
+---
+
+
+E pronto, fizemos um CRUD completo usando context api;
+
+
+---
+
+```txt
+  Dica: Crie as funções de deletar e criar, um pokemon, dentro do provider do próprio PokemonContext
+```
