@@ -1,6 +1,8 @@
-# Links úteis
+Links úteis
   - Link do [figma](https://www.figma.com/file/h2VIN7X7U5mwAklA3lhOrZ/atividade-cruid-context-api-atividade)
   - [Projeto de exemplo](https://kenzie-cruid-context-api.vercel.app/)
+
+---
 
 # 💪 Atividade - Context api + CRUD Simples: Criando minha própria pokédex.
 
