@@ -1,44 +1,24 @@
 import React from 'react';
 
 import {
-  getPokemonsFirstGeneration
-} from './services/request';
-
-import {
-  PokemonContext
-} from './context/PokemonContext';
-
-import {
-  Container,
-  Content,
   Title,
+  Content,
+  Container,
 } from './styles';
 
-import MyPokemons from './components/MyPokemons/MyPokemons';
-import CreatePokemon from './components/CreatePokemon/CreatePokemon';
+import MyPokemons from './components/MyPokemons';
+import ListPokemons from './components/ListPokemons';
+import SearchPokemons from './components/SearchPokemons';
 
 const App = () => {
-  const { setPokemons } = React.useContext(PokemonContext);
-
-  React.useEffect(() => {
-    let mounted = true;
-
-    getPokemonsFirstGeneration()
-      .then((response) => {
-        if (mounted) {
-          setPokemons(response);
-        }
-      });
-
-    return () => mounted = false;
-  }, [])
-
   return (
     <Container>
       <Title>Minha Pokedex</Title>
+
       <Content>
-        <CreatePokemon />
+        <SearchPokemons />
         <MyPokemons />
+        <ListPokemons />
       </Content>
     </Container>
   );

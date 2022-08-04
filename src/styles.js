@@ -7,8 +7,6 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
 
-  gap: 100px;
-
   h1{
     color: var(--red);
     font-weight: bold;
@@ -21,6 +19,7 @@ export const Content = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  padding: 20px 0;
 
   @media screen and (max-width: 1200px) {
     flex-direction: column;

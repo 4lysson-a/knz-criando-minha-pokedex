@@ -1,34 +1,40 @@
 import React from "react";
 
-import { PokemonContext } from "../../context/PokemonContext";
+import { PokemonContext } from "./../../context/PokemonContext";
 
-import { Container, Content, DeleteButton, Item } from "./styles";
-import TrashIcon from './../../icons/TrashIcon';
+import { DeleteButton, Container, Item } from "./styles";
+import TrashIcon from "./../../icons/TrashIcon";
 
 const MyPokemons = () => {
-  const { pokemons, deletePokemon } = React.useContext(PokemonContext);
+  const { pokedex, deletePokemonFromPokedex } =
+    React.useContext(PokemonContext);
+
+  const Title = () => <h1>Meu Time de pokemons</h1>;
+
+  if (!pokedex || pokedex.length === 0) {
+    return (
+      <Container>
+        <Title />
+        <p>Nenhum pokemon na pokedex</p>
+      </Container>
+    );
+  }
 
   return (
     <Container>
-      <div>
-        <h1>Lista de pokemons</h1>
-        <h2>({pokemons.length}) listados</h2>
-      </div>
+      <Title />
 
-      <Content>
-        {pokemons.map((pokemon) => (
-          <Item key={pokemon.name}>
-            <ul>
-              <li>{pokemon.name}</li>
-            </ul>
+      {pokedex?.map((pokemon) => (
+        <Item key={pokemon.name}>
+          <ul>
+            <li>{pokemon.name}</li>
+          </ul>
 
-            <DeleteButton onClick={() => deletePokemon(pokemon.name)}>
-              <TrashIcon />
-            </DeleteButton>
-          </Item>
-        ))}
-      </Content>
-
+          <DeleteButton onClick={() => deletePokemonFromPokedex(pokemon.name)}>
+            <TrashIcon />
+          </DeleteButton>
+        </Item>
+      ))}
     </Container>
   );
 };
