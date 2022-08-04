@@ -43,5 +43,8 @@ E pronto, fizemos um CRUD completo usando context api e pokemons
 ---
 
 ```txt
-  Dica: Crie as funções de deletar, adicionar a pokedex, filtrar e a própria requisição de GET na api, dentro do contexto de PokemonsContext
+  Dica: Crie as funções de deletar, 
+  adicionar a pokedex, 
+  filtrar e a própria requisição de GET na api, 
+  dentro do contexto de PokemonsContext;
 ```
